@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        *{
+            /* background-color:linear-gradient(right,red,yellow); */
+            /* background-image: linear-gradient(red, yellow); */
+            background-repeat: no-repeat;
+
+        }
+        #container
+        {
+            margin: 0px auto;
+            height: 100vh;
+            background-image: linear-gradient(rgb(184, 51, 100),rgb(114, 51, 177))
+        }
+    </style>
+    <script src="./Weather.js"></script>
+</head>
+<body>
+    <div class="container-fluid row">
+        <div id="container" class=" text-center .bg-info.bg-gradient
+        ">
+            <h1>Temprature of city:-</h1> <input type="text" id="result" class="form-control form-control" readonly placeholder="City Temprature in calcius"><br><br>
+            <table class="table table-bordered table-hover table-info text-info text-uppercase tab-content">
+                <tr>
+                    <td>Condtion:-</td>
+                    <td id="con"></td>
+                </tr>
+                <tr>
+                    <td>feels_like:-</td>
+                    <td id="feels"></td>
+                </tr>
+                <tr>
+                    <td>humidity:-</td>
+                    <td id="humidity"></td>
+                </tr>
+                <tr>
+                    <td>pressure:-</td>
+                    <td id="pressure"></td>
+                </tr>
+            </table><br><br>
+            <!-- <h2><span id="con"></span></h2><br><br> -->
+            <h1>City:-</h1><input type="text" id="city" class="form-control mb-2 " autofocus placeholder="Enter City Name">
+            <button type="button" onclick="show()" id="btn" class="btn btn-outline-info mb-2 form-control">Show Data</button>
+            <!-- <span>&deg;</span> -->
+        </div>
+    </div>
+    <!-- javascript code start from here -->
+    
+</body>
+</html>
